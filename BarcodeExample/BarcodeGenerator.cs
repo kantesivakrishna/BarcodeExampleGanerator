@@ -39,6 +39,7 @@ namespace BarcodeExample
 
         private void btnOk_Click(object sender, EventArgs e)
         {
+            //Message Box implementation
             string message = "do you want to close the window";
             string title = "Close Window";
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
