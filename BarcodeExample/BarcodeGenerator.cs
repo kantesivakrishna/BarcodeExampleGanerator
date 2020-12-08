@@ -16,15 +16,18 @@ namespace BarcodeExample
         {
             InitializeComponent();
         }
-
+        /* Need to install zen barcode Extension in visual studio to generate the Codes {Barcode, QR code }
+         */
         private void btnBarcode_Click(object sender, EventArgs e)
         {
+            //Implementation for genarating barcode.
             Zen.Barcode.Code128BarcodeDraw barcode = Zen.Barcode.BarcodeDrawFactory.Code128WithChecksum;
             pictureBox1.Image = barcode.Draw(txtBarcode.Text,50);
         }
 
         private void btnQRCode_Click(object sender, EventArgs e)
         {
+            // Implementation for generating QR code.
             Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
             pictureBox1.Image = qrcode.Draw(txtQRCode.Text, 50);
         }
