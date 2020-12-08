@@ -77,6 +77,7 @@ namespace BarcodeExample
             this.pictureBox1.Size = new System.Drawing.Size(452, 306);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // txtQRCode
             // 
